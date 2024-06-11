@@ -5,6 +5,7 @@ function AnimatedInput(props) {
         <div className='animated-input-wrapper'>
             <input
                 type="text"
+                autocomplete="off"
                 name={props.name}
                 onFocus={() => props.setFormData(prevFormData => ({
                     ...prevFormData,
